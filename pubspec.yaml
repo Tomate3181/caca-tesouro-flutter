@@ -1,0 +1,50 @@
+name: caca_tesouro_flutter
+description: App de Caca ao Tesouro com AR, Shaders e Bussola 3D.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Geolocalizacao e Bussola
+  geolocator: ^10.1.0
+  flutter_compass: ^0.7.0
+
+  # Validacao de Passos Reais
+  pedometer: ^4.0.1
+  permission_handler: ^11.3.1
+
+  # Visual 3D e Realidade Aumentada
+  ar_flutter_plugin: ^0.7.3
+
+  # Audio e Feedback Sensorial
+  audioplayers: ^6.0.0
+  vibration: ^2.0.1
+  vector_math: ^2.1.4
+  cupertino_icons: ^1.0.8
+
+dependency_overrides:
+  permission_handler: ^11.3.1
+  geolocator: ^10.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Registro do Shader em GLSL
+  shaders:
+    - assets/shaders/fog_effect.frag
+
+  # Registro de Assets 3D e Audio
+  assets:
+
+    - assets/models/treasure_chest.gltf
+    - assets/audio/victory.mp3

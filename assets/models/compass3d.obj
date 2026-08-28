@@ -1,0 +1,99 @@
+# 3D Compass Model (OBJ format)
+# Generated for Caça ao Tesouro Flutter
+o Compass
+
+# Compass Outer Rim (Cylinder approximation)
+v -1.0 0.0 -0.1
+v -0.707 0.707 -0.1
+v 0.0 1.0 -0.1
+v 0.707 0.707 -0.1
+v 1.0 0.0 -0.1
+v 0.707 -0.707 -0.1
+v 0.0 -1.0 -0.1
+v -0.707 -0.707 -0.1
+
+v -1.0 0.0 0.1
+v -0.707 0.707 0.1
+v 0.0 1.0 0.1
+v 0.707 0.707 0.1
+v 1.0 0.0 0.1
+v 0.707 -0.707 0.1
+v 0.0 -1.0 0.1
+v -0.707 -0.707 0.1
+
+# Inner Base Dial Center
+v 0.0 0.0 0.05
+v 0.0 0.0 -0.05
+
+# North Needle (Red Arrow pointing UP +Y)
+v 0.0 0.85 0.15
+v -0.15 0.0 0.15
+v 0.15 0.0 0.15
+v 0.0 0.0 0.22
+
+# South Needle (Silver Arrow pointing DOWN -Y)
+v 0.0 -0.85 0.15
+v -0.15 0.0 0.15
+v 0.15 0.0 0.15
+v 0.0 0.0 0.22
+
+# Center Cap
+v 0.0 0.0 0.28
+v -0.08 0.08 0.24
+v 0.08 0.08 0.24
+v 0.08 -0.08 0.24
+v -0.08 -0.08 0.24
+
+# Normals
+vn 0.0 0.0 1.0
+vn 0.0 0.0 -1.0
+vn 0.0 1.0 0.0
+vn 0.0 -1.0 0.0
+vn 1.0 0.0 0.0
+vn -1.0 0.0 0.0
+
+# Faces - Dial Base Top
+f 17 9 10
+f 17 10 11
+f 17 11 12
+f 17 12 13
+f 17 13 14
+f 17 14 15
+f 17 15 16
+f 17 16 9
+
+# Faces - Dial Base Bottom
+f 18 2 1
+f 18 3 2
+f 18 4 3
+f 18 5 4
+f 18 6 5
+f 18 7 6
+f 18 8 7
+f 18 1 8
+
+# Faces - Outer Bezel Sides
+f 1 9 10 2
+f 2 10 11 3
+f 3 11 12 4
+f 4 12 13 5
+f 5 13 14 6
+f 6 14 15 7
+f 7 15 16 8
+f 8 16 9 1
+
+# Faces - North Needle (Pyramidal 3D Needle)
+f 19 20 22
+f 19 22 21
+f 19 21 20
+
+# Faces - South Needle (Pyramidal 3D Needle)
+f 23 25 26
+f 23 26 24
+f 23 24 25
+
+# Faces - Center Pivot Cap
+f 27 28 29
+f 27 29 30
+f 27 30 31
+f 27 31 28

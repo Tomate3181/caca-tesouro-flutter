@@ -1,0 +1,98 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "TreasureChestGenerator"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [0]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "TreasureChest",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "ChestMesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2
+          },
+          "indices": 0,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "ChestGoldMaterial",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [0.85, 0.65, 0.13, 1.0],
+        "metallicFactor": 0.8,
+        "roughnessFactor": 0.3
+      }
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR",
+      "max": [23],
+      "min": [0]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [0.5, 0.4, 0.35],
+      "min": [-0.5, -0.4, -0.35]
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "count": 24,
+      "type": "VEC3",
+      "max": [1.0, 1.0, 1.0],
+      "min": [-1.0, -1.0, -1.0]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 72,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 72,
+      "byteLength": 288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 360,
+      "byteLength": 288,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 648,
+      "uri": "data:application/octet-stream;base64,AAABAAIAAAACAAQABQAFAAYABwAFAAcACAAJAAoACwAJACsADAAHAA4ADwAQAA4AEAAFAAkACwATAAkAEwAEABQAFQAWABQAFgAXAAAAv83MTD2amZk+zcxMPc3MTD2amZk+zcxMPc3MTCyampk+zcxMPCzNzEw9zcxMP83MTD2amZk+zcxMPc3MTD2amZk+zcxMPCzNzEw9zcxMPCzNzEw/zcxMP83MTD/NzEw/zcxMPCzNzEw/zcxMPCzNzEw9zcxMP83MTD/NzEw9zcxMPCzNzEw/zcxMPCzNzEw/zcxMPCzNzEw9zcxMPCzNzEw/zcxMP83MTD/NzEw/zcxMPc3MTD/NzEw9zcxMPCzNzEw/zcxMPCzNzEw9zcxMPc3MTD2amZk+zcxMPc3MTD2amZk+zcxMPCzNzEw9zcxMPCzNzEw9zcxMPc3MTCyampk+zcxMPc3MTCyampk+zcxMPCzNzEw9zcxMPAAAAAAAAAAA/8AAAAAAAAD/wAAAAAAAAAAAAAAAgD8AAIA/AAAAAAAAgD8AAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/AAAAAAAAgD8AAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAgD8AAIA/AACAPwAAAAAAAAAAAAAAgD8AAIA/AAAAAAAAgD8AAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AAAAAAAAgD8="
+    }
+  ]
+}
