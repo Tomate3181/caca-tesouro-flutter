@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../core/constants/app_constants.dart';
 import '../../models/proximity_state.dart';
 
 /// Badge com animação e glassmorphism que indica o estado térmico atual

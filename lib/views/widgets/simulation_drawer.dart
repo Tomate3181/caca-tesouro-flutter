@@ -23,7 +23,8 @@ class SimulationDrawer extends StatelessWidget {
                 // Cabeçalho do painel
                 Row(
                   children: [
-                    const Icon(Icons.tune_rounded, color: AppConstants.colorAccent, size: 28),
+                    const Icon(Icons.tune_rounded,
+                        color: AppConstants.colorAccent, size: 28),
                     const SizedBox(width: 12),
                     const Text(
                       'Simulador & Testes',
@@ -62,16 +63,18 @@ class SimulationDrawer extends StatelessWidget {
                   child: SwitchListTile(
                     title: const Text(
                       'Modo Simulação',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.bold),
                     ),
                     subtitle: Text(
                       controller.isSimulationMode
                           ? 'Usando controles manuais'
                           : 'Usando GPS e Sensores reais',
-                      style: const TextStyle(color: Colors.white54, fontSize: 12),
+                      style:
+                          const TextStyle(color: Colors.white54, fontSize: 12),
                     ),
                     value: controller.isSimulationMode,
-                    activeColor: AppConstants.colorAccent,
+                    activeTrackColor: AppConstants.colorAccent,
                     onChanged: (val) => controller.toggleSimulationMode(val),
                   ),
                 ),
@@ -94,7 +97,8 @@ class SimulationDrawer extends StatelessWidget {
                   subtitle: '55.0 metros (~68 passos) | Intensity = 0.0',
                   color: AppConstants.colorCold,
                   onTap: () {
-                    if (!controller.isSimulationMode) controller.toggleSimulationMode(true);
+                    if (!controller.isSimulationMode)
+                      controller.toggleSimulationMode(true);
                     controller.setSimulatedDistance(55.0);
                   },
                 ),
@@ -104,7 +108,8 @@ class SimulationDrawer extends StatelessWidget {
                   subtitle: '30.0 metros (~37 passos) | Intensity = 0.35',
                   color: AppConstants.colorWarm,
                   onTap: () {
-                    if (!controller.isSimulationMode) controller.toggleSimulationMode(true);
+                    if (!controller.isSimulationMode)
+                      controller.toggleSimulationMode(true);
                     controller.setSimulatedDistance(30.0);
                   },
                 ),
@@ -114,7 +119,8 @@ class SimulationDrawer extends StatelessWidget {
                   subtitle: '15.0 metros (~18 passos) | Intensity = 0.70',
                   color: AppConstants.colorHot,
                   onTap: () {
-                    if (!controller.isSimulationMode) controller.toggleSimulationMode(true);
+                    if (!controller.isSimulationMode)
+                      controller.toggleSimulationMode(true);
                     controller.setSimulatedDistance(15.0);
                   },
                 ),
@@ -124,7 +130,8 @@ class SimulationDrawer extends StatelessWidget {
                   subtitle: '5.0 metros (~6 passos) | Intensity = 1.0',
                   color: AppConstants.colorVeryHot,
                   onTap: () {
-                    if (!controller.isSimulationMode) controller.toggleSimulationMode(true);
+                    if (!controller.isSimulationMode)
+                      controller.toggleSimulationMode(true);
                     controller.setSimulatedDistance(5.0);
                   },
                 ),
@@ -148,9 +155,11 @@ class SimulationDrawer extends StatelessWidget {
                   max: 80.0,
                   divisions: 79,
                   activeColor: controller.proximityState.color,
-                  label: '${controller.currentDistanceMeters.toStringAsFixed(1)}m',
+                  label:
+                      '${controller.currentDistanceMeters.toStringAsFixed(1)}m',
                   onChanged: (val) {
-                    if (!controller.isSimulationMode) controller.toggleSimulationMode(true);
+                    if (!controller.isSimulationMode)
+                      controller.toggleSimulationMode(true);
                     controller.setSimulatedDistance(val);
                   },
                 ),
@@ -176,7 +185,8 @@ class SimulationDrawer extends StatelessWidget {
                   activeColor: AppConstants.colorAccent,
                   label: '${controller.deviceHeading.toStringAsFixed(0)}°',
                   onChanged: (val) {
-                    if (!controller.isSimulationMode) controller.toggleSimulationMode(true);
+                    if (!controller.isSimulationMode)
+                      controller.toggleSimulationMode(true);
                     controller.setSimulatedHeading(val);
                   },
                 ),
@@ -193,7 +203,8 @@ class SimulationDrawer extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(vertical: 14),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),
-                      side: const BorderSide(color: AppConstants.colorGold, width: 1),
+                      side: const BorderSide(
+                          color: AppConstants.colorGold, width: 1),
                     ),
                   ),
                   icon: const Icon(Icons.casino_rounded),
@@ -229,7 +240,8 @@ class SimulationDrawer extends StatelessWidget {
                     controller.resetToInitialTreasure();
                     ScaffoldMessenger.of(context).showSnackBar(
                       const SnackBar(
-                        content: Text('📍 Restaurado para Lat: -23.11443, Lon: -45.70780'),
+                        content: Text(
+                            '📍 Restaurado para Lat: -23.11443, Lon: -45.70780'),
                         duration: Duration(seconds: 2),
                       ),
                     );
@@ -273,7 +285,10 @@ class SimulationDrawer extends StatelessWidget {
                 children: [
                   Text(
                     title,
-                    style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 14),
+                    style: TextStyle(
+                        color: color,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14),
                   ),
                   const SizedBox(height: 2),
                   Text(

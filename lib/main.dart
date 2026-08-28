@@ -39,7 +39,7 @@ class TreasureHuntApp extends StatelessWidget {
           surface: AppConstants.colorCardBg,
           onSurface: Colors.white,
         ),
-        cardTheme: CardTheme(
+        cardTheme: CardThemeData(
           color: AppConstants.colorCardBg,
           elevation: 4,
           shape: RoundedRectangleBorder(

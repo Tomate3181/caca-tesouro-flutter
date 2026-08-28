@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:caca_tesouro_flutter/main.dart';
 import 'package:caca_tesouro_flutter/views/home_hunt_screen.dart';
@@ -6,7 +5,8 @@ import 'package:caca_tesouro_flutter/views/widgets/distance_indicator.dart';
 import 'package:caca_tesouro_flutter/views/widgets/proximity_badge.dart';
 
 void main() {
-  testWidgets('App renders HomeHuntScreen with Proximity Badge and Distance Indicator',
+  testWidgets(
+      'App renders HomeHuntScreen with Proximity Badge and Distance Indicator',
       (WidgetTester tester) async {
     await tester.pumpWidget(const TreasureHuntApp());
     await tester.pump();

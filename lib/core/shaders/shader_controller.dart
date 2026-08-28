@@ -24,7 +24,6 @@ class _FogShaderBackgroundState extends State<FogShaderBackground>
   ui.FragmentShader? _shader;
   Ticker? _ticker;
   double _elapsedSeconds = 0.0;
-  bool _shaderLoaded = false;
 
   @override
   void initState() {
@@ -40,15 +39,16 @@ class _FogShaderBackgroundState extends State<FogShaderBackground>
 
   Future<void> _loadShader() async {
     try {
-      final program = await ui.FragmentProgram.fromAsset(AppConstants.shaderFogPath);
+      final program =
+          await ui.FragmentProgram.fromAsset(AppConstants.shaderFogPath);
       if (mounted) {
         setState(() {
           _shader = program.fragmentShader();
-          _shaderLoaded = true;
         });
       }
     } catch (e) {
-      debugPrint('FogShaderBackground: Usando fallback de gradiente dinâmico: $e');
+      debugPrint(
+          'FogShaderBackground: Usando fallback de gradiente dinâmico: $e');
     }
   }
 

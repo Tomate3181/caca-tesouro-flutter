@@ -17,7 +17,7 @@ class HapticService {
     if (_hasVibratorChecked) return;
     try {
       final hasVibrator = await Vibration.hasVibrator();
-      _canVibrate = hasVibrator ?? false;
+      _canVibrate = hasVibrator;
       _hasVibratorChecked = true;
     } catch (_) {
       _canVibrate = false;
